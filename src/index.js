@@ -14,3 +14,20 @@ document.getElementById("btn-merck").addEventListener('click',function (){
 document.getElementById("btn-kcsd").addEventListener('click',function (){
     document.getElementById("jobDesc").innerHTML = kcsdDesc;
 }); 
+
+var welcomeSection = $('.welcome-section'),
+enterButton = welcomeSection.find('.enter-button');
+var content = $('.content');
+
+setTimeout(function() {
+    welcomeSection.removeClass('content-hidden');
+}, 500);
+
+enterButton.on('click', function(e) {
+    e.preventDefault();
+    welcomeSection.addClass('content-hidden').fadeOut();
+    
+    setTimeout(function() {
+        content.fadeIn();
+    }, 1000);
+});

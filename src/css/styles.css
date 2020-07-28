@@ -7205,3 +7205,13 @@ h2 span {
 .text-blue {
   color: #5f8ccf;
   border-bottom: 4px solid #5f8ccf; }
+
+body {
+  padding-top: 70px; }
+
+.emp-selector {
+  color: black; }
+
+a.emp-selector:hover {
+  color: black;
+  background-color: #5f8ccf; }

@@ -2,13 +2,9 @@
 
 h2 {
     width: 40%; 
-    border-bottom: 4px solid #000; 
-    line-height: 0em;
-    margin: 10px 0 20px; 
  } 
 
 h2 span { 
-    background:#fff; 
     padding:0 10px; 
 }
 
@@ -44,21 +40,24 @@ h2 span {
 
 .text-green{
     color: #178f5d;
-    border-bottom: 4px solid #178f5d; 
 }
 
 .text-pink{
     color: #d44e8f;
-    border-bottom: 4px solid #d44e8f; 
 }
 
 .text-blue{
     color: #5f8ccf;
-    border-bottom: 4px solid #5f8ccf; 
+
+}
+
+.text-white{
+    color: #fff;
 }
 
 body {
     padding-top: 70px;
+    transition:all 1000ms;
 }
 
 .emp-selector {
@@ -136,4 +135,16 @@ a.emp-selector:hover {
 
 .content {
     display: none;
+}
+
+#signature{
+    color: white;
+}
+
+#titleEmployment {
+    transition:all 1000ms;
+}
+
+#titleDF {
+    transition:all 1000ms;
 }

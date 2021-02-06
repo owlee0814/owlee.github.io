@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <title>Owen Lee | Software Engineer</title>
   </head>
   
@@ -24,7 +26,7 @@
 
     <div class="content">
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2e4152;">
           <a class="navbar-brand" href="#">owen lee</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,13 +37,13 @@
                 <a class="nav-link" href="https://www.linkedin.com/in/owenjwlee/" target="_blank">linkedIn</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">github</a>
+                <a class="nav-link" href="https://github.com/owlee0814" target="_blank">github</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" target="_blank">resume</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">contact me</a>
+                <a class="nav-link" href="#titleContact">contact</a>
               </li>
             </ul>
           </div>
@@ -50,76 +52,168 @@
 
       <div class="container">
         <div class="intro">
-          <h1 class="font-weight-bold">hi i'm <mark>owen lee</mark></h1>
-          <h3 class="mb-5 font-weight-light">I like to design, build, and learn</h3>
+          <h1 class="font-weight-bold" id="fLine">Hi I'm Owen Lee</h1>
+          <h3 class="mb-5 font-weight-light text-grayblue">I like to design, build, and learn.</h3>
         </div>
 
         <div class="about">
-          <h2 class="font-weight-bold text-blue mb-5 line-blue"><span>- about</span></h2>
-          <p>I'm a software engineer at Ford Motors, graduated in May of 2019 from Penn State University. <br> I'm always looking for new challenges to tackle (with the help of Google). I like to collaborate and learn from each other.</p>
+          <h1 class="mb-5 font-weight-bold text-blue"><span>About Me</span></h1>
+          <p class="text-grayblue pbox">Hello, my name is Owen Lee. Currently, I'm working at <mark class=text-gold><b>Ford Motors Company</b></mark> as a software engineer.
+            <br>
+            <br>
+            In 2019, I graduated from <mark class=text-gold><b>Pennsylvania State University</b></mark>, majoring in Information Sciecne (Design and Development).
+            <br><br>
+            I enjoy building programs to provide something helpful to the communnities. I'm always looking for new challenges to tackle (with the help of Google). I like to collaborate and learn from each other.
+            <br><br>
+            The best way to connect with me is by shooting me an email. Feel free to contact me!
+          </p>
         </div>
       
         <div class="employment">
-          <h2 id="titleEmployment" class="font-weight-bold text-green mb-5"><span>- employment</span></h2>
-
-          <div class="row margin-top-5">
-            <div class="col col-md-3">
-              <div id="workplaces">
-                <div class="row mt-3 mb-3">
-                  <div class="col">
-                      <a id="btn-ford" class="emp-selector" href="#">Ford Motors</a>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col">
-                      <a id="btn-merck" class="emp-selector" href="#">Merck Co</a>
-                  </div>
-                </div>
-                <div class="row ">
-                  <div class="col">
-                      <a id="btn-kcsd" class="emp-selector" href="#">ITS KCSD</a>
-                  </div>
-                </div>
-              </div>
+          <h1 id="titleEmployment" class="mb-5 font-weight-bold text-green"><span>Employment</span></h1>
+          <div class="vertical_line">
+            <div class="text-grayblue pbox">
+              <h4 class="text-white">Ford Motors Company</h4>
+              <div class='element'><span class='timeline_pos' style="bottom: 12px;">Jan '21</span></div>
+              <h5>Software Engineer</h5>
+              <p> •    Building next gen vehicle infotainment HMI software.<br>
+                  •  Using ReactJS, built interactive UI components.<br>
+                  •    Troubleshoot phone application user experience issues
+              </p>
+              <a class="skillbox_gold">react</a><a class="skillbox_gold">html</a><a class="skillbox_gold">css</a><a class="skillbox_green">jira</a><a class="skillbox_green">git</a>
+              <div class='element'><span class='timeline_pos'>Jun '19 - Dec '20</span></div>
+              <h5 style="padding-top: 25px">Full Stack Engineer</h5>
+              <p> •    Translated UI wireframes and mock-ups to visual elements of an application.<br>
+                  •    Optimized APIs to reduced download and upload time by 20%.<br>
+                  •    Implemented back-end APIs for Spring Boot application.<br>
+                  •    Built front-end of the application in HTML, CSS, JavaScript, jQuery, and Angular.<br>
+                  •    Utilized test-driven development to ensure all business requirements are met.
+              </p>
+              <a class="skillbox_gold">java</a><a class="skillbox_gold">spring</a><a class="skillbox_gold">angular</a><a class="skillbox_gold">html</a><a class="skillbox_green">rally</a><a class="skillbox_green">swagger</a><a class="skillbox_green">postman</a><a class="skillbox_green">git</a>
             </div>
-            <div class="col col-md-5">
-              <h5 id="jobTerm"></h5>
-              <p id="jobName"></p>
-              <p id="jobDesc"></p>
+            <br>
+            <div class="text-grayblue pbox">
+              <h4 class="text-white">Merck & Co.</h4>
+              <div class='element'><span class='timeline_pos'>May '17 - Aug '17</span></div>
+              <h5>Software Engineer</h5>
+              <p> •    Developed automated table dissolution detection software using OpenCV and ImageJ.<br>
+                  •    Utilized open-source webcam API to analyze and detect when dissolution process is done.<br>
+                  •    Developed cell image processing application to count the number of cells in the image.<br>
+                  •    Increased the accuracy of cell counts to 97%.
+              </p>
+              <a class="skillbox_gold">java</a><a class="skillbox_gold">imagej</a><a class="skillbox_gold">gui</a><a class="skillbox_green">git</a>
+            </div>
+            <br>
+            <div class="text-grayblue pbox">
+              <h4 class="text-white">Pennsylvania State Student Technology Service</h4>
+              <div class='element'><span class='timeline_pos'>Aug '16 - Jun '19</span></div>
+              <h5>Tech Supervisor</h5>
+              <p> •    Provided IT support to student and faculty members (both software and hardware).<br>
+                  •    Organized and managed employee schedules and performance using ServiceNow.<br>
+                  •    Repaired personal hardware and troubleshooted technical problems.
+              </p>
+              <a class="skillbox_green">ServiceNow</a><a class="skillbox_blue">HW Repair</a><a class="skillbox_blue">SW Repair</a>
             </div>
           </div>
         </div>
       
-
-
         <div id="myworks" class="my-works" data-color="#7f3995">
-          <h1 id="titleDF" class="mb-5 font-weight-bold text-pink"><span>- digital footprints</span></h2>
-          <div class="row">
-            <div class="col-md">
-              <img class="img-fluid mb-4" src="./asset/gray-sq.png">
+          <h1 id="titleDF" class="mb-5 font-weight-bold text-pink"><span>Digital Footprints</span></h2>
+          <div id="contentDF">
+            <div class="row">
+              <div class="col-md">
+                <img class="img-fluid mb-4" src="./asset/sync4.png" data-toggle="modal" data-target="#sync4Modal">
+              </div>
+              <div class="col-md">
+                <img class="img-fluid mb-4" src="./asset/chocolatey.png" data-toggle="modal" data-target="#chocolateyModal">
+              </div>
             </div>
-            <div class="col-md">
-              <img class="img-fluid mb-4" src="./asset/gray-sq.png">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md">
-              <img class="img-fluid" src="./asset/gray-sq.png">
-            </div>
-            <div class="col-md">
-              <img class="img-fluid" src="./asset/gray-sq.png">
+            <div class="row">
+              <div class="col-md">
+                <img class="img-fluid" src="./asset/ootd.png" data-toggle="modal" data-target="#ootdModal">
+              </div>
+              <div class="col-md">
+                <img class="img-fluid" src="./asset/gray-sq.png">
+              </div>
             </div>
           </div>
         </div>
 
+        <div class="modal fade" id="sync4Modal" tabindex="-1" role="dialog" aria-labelledby="sync4ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="sync4ModalLabel">SYNC4 HMI</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="./asset/sync4.png">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="chocolateyModal" tabindex="-1" role="dialog" aria-labelledby="chocolateyModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="chocolateyModalLabel">Chocolatey Installer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="./asset/chocolatey.png">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="ootdModal" tabindex="-1" role="dialog" aria-labelledby="ootdModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ootdModalLabel">Outfit of the Day iOS app</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="./asset/ootd.png">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" class="my-works" data-color="#7f3995">
+          <h1 id="titleContact" class="mb-5 font-weight-bold text-gold"><span>Contact Me</span></h2>
+          <p class="text-grayblue">
+            Feel free to contact me! Get in touch with me via Email or LinkedIn!
+          </p>
+          <a class="btn btn-dark" href="https://www.linkedin.com/in/owenjwlee/" target="_blank"" >LinkedIn</a>
+          <a class="btn btn-dark" href="mailto:owlee0814@gmail.com">Email</a>
+        </div>
+
         <div class="mb-5 text-center font-weight-light">
-          <a id="signature" class=>Designed & Built by Owen Lee | 2020</a>
+          <span class="text-grayblue">Designed & Built by Owen Lee | 2020</span>
         </div>
       </div>
     </div>
     
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
